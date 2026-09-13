@@ -1,0 +1,6 @@
+[mysqld]
+# Needed for compatibility with existing SQL clients / older Laravel drivers.
+default-authentication-plugin=mysql_native_password
+
+# Listen on all interfaces (Render's private network isolates this from the public internet).
+bind-address=0.0.0.0
